@@ -13,7 +13,7 @@ private:
 	int _idcliente;
 
 public:
-	Cliente(string nome, string cpf, string telefone, int idcliente);
+	Cliente(string nome, string cpfcnpj, string telefone, int idcliente);
 
 	virtual void Exibir() const override;
 

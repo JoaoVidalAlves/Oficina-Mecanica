@@ -14,7 +14,7 @@ private:
 	int _idmecanico;
 
 public:
-	Mecanico(string nome, string cpf, string telefone, int idmecanico);
+	Mecanico(string nome, string cpfcnpj, string telefone, int idmecanico);
 
 	virtual void Exibir() const override;
 

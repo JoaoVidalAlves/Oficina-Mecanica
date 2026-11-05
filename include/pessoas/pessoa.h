@@ -11,13 +11,13 @@ class Pessoa
 {
 protected:
 	string _nome;
-	string _CPF;
+	string _CPFCNPJ;
 	string _telefone;
 
 public:
 	Pessoa(string nome, string cpf, string telefone);
 	
-	virtual void Exibir() const;
+	virtual void Exibir() const = 0;
 
 	~Pessoa()
 	{

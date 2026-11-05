@@ -3,12 +3,14 @@
 
 using std::string;
 
-Mecanico::Mecanico(string nome, string cpf, string telefone, int idmecanico)
-	:	Pessoa::Pessoa(nome, cpf, telefone), _idmecanico(idmecanico) { }
+Mecanico::Mecanico(string nome, string cpfcnpj, string telefone, int idmecanico)
+	:	Pessoa::Pessoa(nome, cpfcnpj, telefone), _idmecanico(idmecanico) { }
 
 void Mecanico::Exibir() const
 {
 	std::cout << "ID: " << _idmecanico << "\n";
-	Pessoa::Exibir();
+	std::cout << "Nome: " << _nome << "\n";
+	std::cout << "CPF: " << _CPF << "\n";
+	std::cout << "Telefone: " << _telefone << "\n";
 }
 
