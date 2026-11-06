@@ -15,7 +15,7 @@ protected:
 	string _telefone;
 
 public:
-	Pessoa(string nome, string cpf, string telefone);
+	Pessoa(string nome, string cpfcnpj, string telefone);
 	
 	virtual void Exibir() const = 0;
 

@@ -10,7 +10,7 @@ void Mecanico::Exibir() const
 {
 	std::cout << "ID: " << _idmecanico << "\n";
 	std::cout << "Nome: " << _nome << "\n";
-	std::cout << "CPF: " << _CPF << "\n";
+	std::cout << "CPF: " << _CPFCNPJ << "\n";
 	std::cout << "Telefone: " << _telefone << "\n";
 }
 
