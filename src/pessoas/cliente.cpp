@@ -53,13 +53,11 @@ void Cliente::listarVeiculos() const
 		return;
 	}
 	for (const auto& v : _veiculos)
-		v->Exibir();
+		v->exibir();
 }
 
-void Cliente::Exibir() const
+void Cliente::exibir() const
 {
-	std::cout << "ID: " << _id << "\n";
-	std::cout << "Nome: " << _nome << "\n";
-	std::cout << "CPF: " << _CPFCNPJ << "\n";
-	std::cout << "Telefone: " << _telefone << "\n\n";
+	std::cout << "\n--- CLIENTE --- \n";
+	Pessoa::exibir();
 }

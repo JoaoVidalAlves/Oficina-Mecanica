@@ -10,7 +10,7 @@ int main()
 	try 
 	{
 		Mecanico mec1(1, "Joao", "12448017638", "923451267", "Motor", 30);
-		mec1.Exibir();
+		mec1.exibir();
 	}
 	catch (const ErroDeValidacao& e)
 	{
@@ -20,7 +20,7 @@ int main()
 	try
 	{
 		Cliente cli1(2, "Pedro", "83671084421", "31932451235");
-		cli1.Exibir();
+		cli1.exibir();
 	}
 	catch (const ErroDeValidacao& e)
 	{

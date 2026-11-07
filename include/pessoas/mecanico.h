@@ -22,7 +22,7 @@ public:
 
 	void setValorHora(double v);
 
-	void Exibir() const override;
+	void exibir() const override;
 
 	~Mecanico() = default;
 };

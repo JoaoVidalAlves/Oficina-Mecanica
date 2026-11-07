@@ -31,12 +31,10 @@ void Mecanico::setValorHora(double v)
 	_valorHora = v;
 }
 
-void Mecanico::Exibir() const
-{
-	std::cout << "ID: " << _id << "\n";
-	std::cout << "Nome: " << _nome << "\n";
-	std::cout << "CPF: " << _CPFCNPJ << "\n";
-	std::cout << "Telefone: " << _telefone << "\n";
+void Mecanico::exibir() const
+{	
+	std::cout << "\n--- MECANICO --- \n";
+	Pessoa::exibir();
 	std::cout << "Especialidade: " << _especialidade << "\n";
 	std::cout << "Valor da hora: " << _valorHora << "\n\n";
 }

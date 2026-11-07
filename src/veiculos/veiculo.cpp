@@ -2,7 +2,7 @@
 // Em outros compiladores, esta linha não faz nada.
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "veiculos/Veiculo.h"
+#include "veiculos/veiculo.h"
 #include "comum/Excecoes.h"   // necessário para poder usar o throw
 
 #include <cctype>
@@ -115,7 +115,7 @@ void Veiculo::atualizarKm(int novoKm)
     km = novoKm;
 }
 
-void Veiculo::Exibir() const 
+void Veiculo::exibir() const 
 {
     std::cout << tipo() << " | Placa: " << placa << " | Modelo: " << modelo
         << " | Ano: " << ano << " | Km: " << km << "\n";

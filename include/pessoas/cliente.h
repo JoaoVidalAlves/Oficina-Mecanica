@@ -29,7 +29,7 @@ public:
 
 	void listarVeiculos() const;
 
-	void Exibir() const override;
+	void exibir() const override;
 
 	~Cliente() = default;
 };

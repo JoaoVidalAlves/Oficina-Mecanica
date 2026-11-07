@@ -18,7 +18,7 @@ protected:
 public:
 	Pessoa(int id, const string& nome, const string& cpfcnpj, const string& telefone);
 	
-	virtual void Exibir() const = 0;
+	virtual void exibir() const = 0;
 
 	virtual ~Pessoa() = default;
 };
