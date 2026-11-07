@@ -115,7 +115,7 @@ void Veiculo::atualizarKm(int novoKm)
     km = novoKm;
 }
 
-void Veiculo::exibir() const 
+void Veiculo::Exibir() const 
 {
     std::cout << tipo() << " | Placa: " << placa << " | Modelo: " << modelo
         << " | Ano: " << ano << " | Km: " << km << "\n";

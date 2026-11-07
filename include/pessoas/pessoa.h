@@ -10,19 +10,17 @@ using std::cout;
 class Pessoa
 {
 protected:
+	int _id;
 	string _nome;
 	string _CPFCNPJ;
 	string _telefone;
 
 public:
-	Pessoa(string nome, string cpfcnpj, string telefone);
+	Pessoa(int id, const string& nome, const string& cpfcnpj, const string& telefone);
 	
 	virtual void Exibir() const = 0;
 
-	~Pessoa()
-	{
-		std::cout << "Pessoa: " << _nome << " removida" << "\n";
-	}
+	virtual ~Pessoa() = default;
 };
 
 #endif

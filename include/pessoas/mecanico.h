@@ -3,25 +3,27 @@
 
 #include <iostream>
 #include <string>
-#include "pessoa.h"
+#include "pessoas/pessoa.h"
 
 using std::string;
-using std::cout;
 
 class Mecanico : public Pessoa
 {
 private:
-	int _idmecanico;
+	string _especialidade;
+	double _valorHora;
 
 public:
-	Mecanico(string nome, string cpfcnpj, string telefone, int idmecanico);
+	Mecanico(int id, const string& nome, const string& cpf, const string& telefone, const string& especialidade, double valorHora);
 
-	virtual void Exibir() const override;
+	string getEspecialidade() const;
 
-	~Mecanico()
-	{
-		std::cout << "Mecanico(a): " << _nome << " removido(a)" << "\n";
-	}
+	double getValorHora() const;
+
+	void setValorHora(double v);
+
+	void Exibir() const override;
+
+	~Mecanico() = default;
 };
-
 #endif

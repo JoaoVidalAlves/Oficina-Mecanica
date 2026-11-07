@@ -32,7 +32,7 @@ public:
 
     // Mostra os dados comuns. As filhas podem chamar Veiculo::exibir()
     // e acrescentar os dados próprios.
-    virtual void exibir() const;
+    virtual void Exibir() const;
 };
 
 #endif // !VEICULO_H

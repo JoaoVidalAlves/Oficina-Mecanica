@@ -1,26 +1,37 @@
 #ifndef CLIENTE_H
 #define CLIENTE_H
 
-#include <iostream>
+#include <memory>
 #include <string>
-#include "pessoa.h"
+#include <vector>
+
+#include "pessoas/pessoa.h"
+#include "veiculos/veiculo.h"
 
 using std::string;
+using std::vector;
 
 class Cliente : public Pessoa
 {
 private:
-	int _idcliente;
+	vector<std::unique_ptr<Veiculo>> _veiculos;
 
 public:
-	Cliente(string nome, string cpfcnpj, string telefone, int idcliente);
+	Cliente(int id, const string& nome, const string& cpfcnpj, const string& telefone);
 
-	virtual void Exibir() const override;
+	void AdicionarVeiculo(std::unique_ptr<Veiculo> v);
 
-	~Cliente()
-	{
-		std::cout << "Cliente: " << _nome << " removido" << "\n";
-	}
+	Veiculo* BuscarVeiculo(const string& placa) const;
+
+	bool RemoverVeiculo(const string& placa);
+
+	const vector<std::unique_ptr<Veiculo>>& getVeiculos() const;
+
+	void listarVeiculos() const;
+
+	void Exibir() const override;
+
+	~Cliente() = default;
 };
 
 #endif
