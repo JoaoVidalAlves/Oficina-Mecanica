@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "pessoas/cliente.h"
-#include "comum/Excecoes.h"
+#include "comum/escecoes.h"
 
 using std::string;
 

@@ -1,4 +1,4 @@
-#include "comum\Excecoes.h"
+#include "comum\escecoes.h"
 
 // Teste da Fase 0: confere se as quatro exceções podem ser lançadas e tratadas.
 //

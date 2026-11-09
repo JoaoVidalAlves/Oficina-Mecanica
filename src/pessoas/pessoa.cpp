@@ -2,7 +2,7 @@
 #include <cctype> 
 
 #include "pessoas/pessoa.h"
-#include "comum/Excecoes.h"   // necessário para usar o throw
+#include "comum/escecoes.h"   // necessário para usar o throw
 
 namespace
 {

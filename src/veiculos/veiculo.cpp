@@ -3,7 +3,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include "veiculos/veiculo.h"
-#include "comum/Excecoes.h"   // necessário para poder usar o throw
+#include "comum/escecoes.h"   // necessário para poder usar o throw
 
 #include <cctype>
 #include <ctime>

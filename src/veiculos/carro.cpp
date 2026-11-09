@@ -1,5 +1,5 @@
 #include "veiculos/carro.h"
-#include "comum/Excecoes.h"   // necessário para poder usar o throw
+#include "comum/escecoes.h"   // necessário para poder usar o throw
 
 #include <cctype>
 #include <ctime>
@@ -8,7 +8,7 @@
 Carro::Carro(const std::string& placa, const std::string& modelo, int ano, int km, int portas)
     : Veiculo(placa, modelo, ano, km), _portas(portas)
 {
-    if (portas < 2 && portas > 5)
+    if (portas < 2 || portas > 5)
         throw ErroDeValidacao("Minimo de portas: 2 - Maximo de portas: 5");
 }
 

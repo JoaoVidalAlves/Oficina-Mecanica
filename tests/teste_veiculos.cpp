@@ -1,7 +1,7 @@
 #include "veiculos/carro.h"
 #include "veiculos/moto.h"
 #include "veiculos/caminhonete.h"
-#include "comum/Excecoes.h"
+#include "comum/escecoes.h"
 
 #include <iostream>
 #include <string>
