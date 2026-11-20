@@ -19,7 +19,7 @@ int main()
 	
 	try
 	{
-		Cliente cli1(2, "Pedro", "83671084421", "31932451235");
+		Cliente cli1(2, "Pedro LTDA", "83671084423643", "31932451235");
 		cli1.exibir();
 	}
 	catch (const ErroDeValidacao& e)
