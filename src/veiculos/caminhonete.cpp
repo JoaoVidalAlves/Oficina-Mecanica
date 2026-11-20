@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "veiculos/caminhonete.h"
 #include "comum/excecoes.h"   // necessário para poder usar o throw
 

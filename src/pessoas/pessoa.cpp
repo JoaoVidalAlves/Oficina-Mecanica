@@ -20,6 +20,23 @@ Pessoa::Pessoa(int id, const string& nome, const string& cpfcnpj, const string& 
 		throw ErroDeValidacao("O telefone nao pode ser vazio");
 }
 
+int Pessoa::getId() const 
+{ 
+	return _id;
+}
+string Pessoa::getNome() const 
+{ 
+	return _nome;
+}
+string Pessoa::getCPFCNPJ() const 
+{ 
+	return _CPFCNPJ;
+}
+string Pessoa::getTelefone() const 
+{ 
+	return _telefone;
+}
+
 void Pessoa::exibir() const
 {
 	std::cout << "ID: " << _id << "\n";

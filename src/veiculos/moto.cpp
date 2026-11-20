@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "veiculos/moto.h"
 #include "comum/excecoes.h"   // necessário para poder usar o throw
 

@@ -2,6 +2,7 @@
 
 #include "pessoas/cliente.h"
 #include "comum/excecoes.h"
+#include "comum/utils.h"
 
 using std::string;
 
@@ -19,7 +20,7 @@ void Cliente::adicionarVeiculo(std::unique_ptr<Veiculo> v)
 
 Veiculo* Cliente::buscarVeiculo(const string& placa) const
 {
-	string placaBusca = paraMaiusculas(placa);
+	string placaBusca = Utils::paraMaiusculas(placa);
 	for (const auto& v : _veiculos)
 	{
 		if (v->getPlaca() == placaBusca)
@@ -30,7 +31,7 @@ Veiculo* Cliente::buscarVeiculo(const string& placa) const
 
 bool Cliente::removerVeiculo(const string& placa)
 {
-	string placaBusca = paraMaiusculas(placa);
+	string placaBusca = Utils::paraMaiusculas(placa);
 	for (auto it = _veiculos.begin(); it != _veiculos.end(); ++it)
 	{
 		if ((*it)->getPlaca() == placaBusca)

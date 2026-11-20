@@ -3,7 +3,7 @@
 
 #include <string>
 
-class Utils
+namespace Utils
 {
 	using std::string;
 
@@ -18,5 +18,5 @@ class Utils
 	bool placaValida(const std::string& p);
 
 	bool soDigitos(const string& texto);
-};
+}
 #endif // !UTILS_H

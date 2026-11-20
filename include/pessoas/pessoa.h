@@ -20,7 +20,7 @@ public:
 	
 	virtual void exibir() const = 0;
 
-	int getId();
+	int getId() const;
 	string getNome() const;
 	string getCPFCNPJ() const;
 	string getTelefone() const;
