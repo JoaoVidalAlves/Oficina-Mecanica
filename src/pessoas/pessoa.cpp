@@ -12,7 +12,7 @@ Pessoa::Pessoa(int id, const string& nome, const string& cpfcnpj, const string& 
 		throw ErroDeValidacao("O id não pode ser menor ou igual a 0");
 	if (nome.empty())
 		throw ErroDeValidacao("O nome não pode ser vazio");
-	if ((cpfcnpj.size() != 11 && cpfcnpj.size() != 14) || !Utils::soDigitos(cpfcnpj))
+	if (Utils::cpfValido(cpfcnpj))
 	{
 	    throw ErroDeValidacao("CPF / CNPJ incorreto");
 	}
