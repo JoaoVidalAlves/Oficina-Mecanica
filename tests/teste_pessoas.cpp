@@ -1,6 +1,6 @@
 #include "pessoas/mecanico.h"
 #include "pessoas/cliente.h"
-#include "comum/escecoes.h"
+#include "comum/excecoes.h"
 
 #include <iostream>
 #include <string>

@@ -1,9 +1,5 @@
 #include "veiculos/caminhonete.h"
-#include "comum/escecoes.h"   // necessário para poder usar o throw
-
-#include <cctype>
-#include <ctime>
-#include <iostream>
+#include "comum/excecoes.h"   // necessário para poder usar o throw
 
 Caminhonete::Caminhonete(const std::string& placa, const std::string& modelo, int ano, int km, double capacidadeCargaKg)
     : Veiculo(placa, modelo, ano, km), _capacidadeDeCarga(capacidadeCargaKg)

@@ -19,11 +19,11 @@ private:
 public:
 	Cliente(int id, const string& nome, const string& cpfcnpj, const string& telefone);
 
-	void AdicionarVeiculo(std::unique_ptr<Veiculo> v);
+	void adicionarVeiculo(std::unique_ptr<Veiculo> v);
 
-	Veiculo* BuscarVeiculo(const string& placa) const;
+	Veiculo* buscarVeiculo(const string& placa) const;
 
-	bool RemoverVeiculo(const string& placa);
+	bool removerVeiculo(const string& placa);
 
 	const vector<std::unique_ptr<Veiculo>>& getVeiculos() const;
 

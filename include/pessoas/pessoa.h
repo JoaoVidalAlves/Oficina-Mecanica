@@ -20,6 +20,11 @@ public:
 	
 	virtual void exibir() const = 0;
 
+	int getId();
+	string getNome() const;
+	string getCPFCNPJ() const;
+	string getTelefone() const;
+
 	virtual ~Pessoa() = default;
 };
 

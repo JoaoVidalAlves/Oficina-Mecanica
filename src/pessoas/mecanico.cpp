@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "pessoas/mecanico.h"
-#include "comum/escecoes.h"
+#include "comum/excecoes.h"
 
 using std::string;
 

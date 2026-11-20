@@ -1,9 +1,5 @@
 #include "veiculos/moto.h"
-#include "comum/escecoes.h"   // necessário para poder usar o throw
-
-#include <cctype>
-#include <ctime>
-#include <iostream>
+#include "comum/excecoes.h"   // necessário para poder usar o throw
 
 Moto::Moto(const std::string& placa, const std::string& modelo, int ano, int km, int cilindradas)
     : Veiculo(placa, modelo, ano, km), _cilindradas(cilindradas)
