@@ -50,4 +50,4 @@ O programa completo, quando houver arquivos em `src/`:
 ## Estado atual
 
 - Concluído: exceções (`include/comum/excecoes.h`), hierarquia de pessoas e de veículos.
-- Pendente: estoque, orçamento, ordem de serviço, caixa, menu e gravação em arquivo.
+- Pendente: estoque, orçamento, ordem de serviço, caixa, menu e gravação em arquivo. 
