@@ -54,13 +54,13 @@ inline std::string paraTexto(TipoLancamento s)
 {
 	switch (s)
 	{
-	case TipoLancamento::Receita:  return "Receita";
-	case TipoLancamento::Despesa:  return "Despesa";
+	case TipoLancamento::Receita: return "Receita";
+	case TipoLancamento::Despesa: return "Despesa";
 	}
 	return "Desconhecido";
 }
 
-inline StatusOS deTextoStatusOS(const std::string& texto)
+inline TipoLancamento deTextoTipoLancamento(const std::string& texto)
 {
 	if (texto == "Receita") return TipoLancamento::Receita;
 	if (texto == "Despesa") return TipoLancamento::Despesa;
