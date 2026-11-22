@@ -2,6 +2,7 @@
 #include <string>
 
 #include "estoque/estoque.h"
+#include "comum/excecoes.h"
 
 Peca* Estoque::adicionarPeca(std::unique_ptr<Peca> p)
 {
