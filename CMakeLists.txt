@@ -18,7 +18,7 @@ list(FILTER FONTES EXCLUDE REGEX "/main\\.cpp$")
 
 if(FONTES)
     add_library(oficina_lib STATIC ${FONTES})
-    target_include_directories(oficina_lib PUBLIC include)
+    target_include_directories(oficina_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 else()
     # Ainda não há classes com .cpp: a biblioteca só leva a pasta include.
     add_library(oficina_lib INTERFACE)

@@ -13,8 +13,8 @@
 #include <string>
 #include <vector>
 
-#include "oficina.h"
-#include "menu.h"
+#include "oficina/oficina.h"
+#include "oficina/menu.h"
 
 #include "comum/excecoes.h"
 #include "pessoas/pessoa.h"
